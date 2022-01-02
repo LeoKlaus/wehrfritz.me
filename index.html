@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>wehrfritz.me</title>
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#333333">
+    <meta name="apple-mobile-web-app-title" content="wehrfritz.me">
+    <meta name="application-name" content="wehrfritz.me">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#333333">
+</head>
+<body>
+    <div class="logo">
+        <h1>Leo Wehrfritz</h1>
+        <img src="images/me.jpg">
+        <p>Computer science student at JGU Mainz, 
+            <br>part time IT-Support, 
+            <br>sometimes a hobby developer.</p>
+    </div>
+    <div class="links">
+        <a target="_blank" href="https://github.com/LeoKlaus" class="button"><i class="fab fa-github"></i> Github</a>
+	<button onclick="copyToClip()" onmouseout="outFunc()" class="button">
+  		<span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  		<i class="fab fa-discord"></i> derkleineleo#6682
+  	</button>
+    </div>
+
+<script>
+	function copyToClip() {
+  		navigator.clipboard.writeText("derkleineleo#6682");
+  
+  		var tooltip = document.getElementById("myTooltip");
+  		tooltip.innerHTML = "Copied!";
+	}
+
+	function outFunc() {
+  		var tooltip = document.getElementById("myTooltip");
+  		tooltip.innerHTML = "Copy to clipboard";
+	}
+</script>
+
+</body>
+</html>
