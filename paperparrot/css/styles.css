@@ -37,9 +37,8 @@ body {
 
 h1 {
   font-size: 7em;
-  margin: auto;
     color: #725bff;
-    padding: 1em;
+    margin: 1em;
 }
 
 p {
@@ -60,6 +59,7 @@ p {
         }
     h1 {
       font-size: 4em;
+        margin: 1em;
     }
 
     p {
@@ -68,5 +68,7 @@ p {
     }
     #logo{
         width:6em;
+        top:2em;
+        left:2em;
     }
   }
