@@ -29,16 +29,17 @@ body {
 
 #logo {
     text-align: left;
-    width: 6em;
+    width: 7em;
     left: 1em;
     top: 1em;
     position: absolute;
 }
 
 h1 {
-  font-size: 6em;
+  font-size: 7em;
   margin: auto;
-    color: #725bff
+    color: #725bff;
+    padding: 1em;
 }
 
 p {
@@ -64,5 +65,8 @@ p {
     p {
       width: 24em;
       font-size: 2em;
+    }
+    #logo{
+        width:6em;
     }
   }
