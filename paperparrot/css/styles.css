@@ -27,8 +27,16 @@ body {
     font-family:'Roboto', sans-serif;
 }
 
+#logo {
+    text-align: left;
+    width: 6em;
+    left: 1em;
+    top: 1em;
+    position: absolute;
+}
+
 h1 {
-  font-size: 4em;
+  font-size: 6em;
   margin: auto;
     color: #725bff
 }
