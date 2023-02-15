@@ -28,11 +28,7 @@ body {
 }
 
 #logo {
-    text-align: left;
     width: 7em;
-    left: 1em;
-    top: 1em;
-    position: absolute;
 }
 
 h1 {
@@ -66,9 +62,11 @@ p {
       width: 24em;
       font-size: 2em;
     }
-    #logo{
-        width:6em;
-        top:2em;
-        left:2em;
+	
+    #logo {
+      width: 6em;
+      position: fixed;
+      top: 2em;
+      left: 2em;
     }
   }
