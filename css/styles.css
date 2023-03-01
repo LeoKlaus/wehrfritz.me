@@ -15,9 +15,25 @@ body {
     color: white;
 }
 
-img {
-  width: 50em;
+.profile {
+  width: 30em;
   border-radius: 25%;
+}
+
+.paperparrot-icon {
+  background: url('../images/paperparrot.svg');
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  position: absolute;
+  margin-left: -0.625em;
+}
+
+.button-description {
+  margin-left: 0.625em;
+  display: inline;
+  font-size: 1em;
 }
 
 h1 {
