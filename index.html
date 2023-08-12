@@ -1,48 +1,138 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>wehrfritz.me</title>
-    <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#333333">
-    <meta name="apple-mobile-web-app-title" content="wehrfritz.me">
-    <meta name="application-name" content="wehrfritz.me">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#333333">
-</head>
-<body>
-    <div class="logo">
-        <h1>Leo Wehrfritz</h1>
-        <img class="profile" src="images/me.jpg">
-        <p>Computer science student at JGU Mainz,
-            <br>currently mostly working with Swift</p>
-    </div>
-    <div class="links">
-        <a target="_blank" href="https://github.com/LeoKlaus" class="button"><i class="fab fa-github"></i> GitHub</a>
-	<button onclick="copyToClip()" onmouseout="outFunc()" class="button">
-  		<span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-  		<i class="fab fa-discord"></i> derkleineleo#6682
-  	</button>
-	<a href="https://paperparrot.me" class="button"><i class="paperparrot-icon"></i><p class="button-description">Paperparrot</p></a>
-	<a href="openairscan/" class="button"><i class="fa fa-print"></i> SwiftESCL</a>
-    </div>
-<script>
-	function copyToClip() {
-  		navigator.clipboard.writeText("derkleineleo#6682");
-  
-  		var tooltip = document.getElementById("myTooltip");
-  		tooltip.innerHTML = "Copied!";
-	}
+<html lang="en">
 
-	function outFunc() {
-  		var tooltip = document.getElementById("myTooltip");
-  		tooltip.innerHTML = "Copy to clipboard";
-	}
-</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#C1D5E3" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#001220" media="(prefers-color-scheme: dark)">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            background: #ee70a4;
+            aspect-ratio: 960/540;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: url('./images/waves-bright.svg');
+        }
+
+        .card {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            border-radius: 20px;
+            max-width: 600px;
+            height: 400px;
+            padding: 25px;
+            color: #444;
+            box-shadow: 5px 5px 8px 1px rgba(37, 37, 37, 0.2);
+        }
+
+        .button {
+            align-items: center;
+            display: inline-block;
+            color: #444;
+            cursor: pointer;
+            margin: 4px 2px;
+        }
+
+        .profile {
+            float: right;
+            border-radius: 20px;
+            max-width: 200px;
+            margin-left: 20px;
+        }
+
+        .github-black {
+            background: url('./images/GitHub_Logo_Black.png');
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 1.25em;
+            height: 1.25em;
+            position: absolute;
+            margin-left: -0.625em;
+        }
+
+        .paperparrot-icon {
+            background: url('./images/paperparrot.svg');
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 1.25em;
+            height: 1.25em;
+            position: absolute;
+            margin-left: -0.625em;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #d24c84;
+                aspect-ratio: 960/540;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-image: url('./images/waves-dark.svg');
+            }
+
+            .card {
+                background-color: #444;
+                color: #fff;
+            }
+
+            .button {
+                color: #fff;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="card">
+        <img class="profile" src="images/me.jpg">
+        <h1>Leo Wehrfritz</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, reprehenderit obcaecati? Architecto dolores
+            fuga veniam laudantium perferendis assumenda totam quia quod, autem mollitia. Iure sapiente voluptatibus id
+            laudantium corrupti magni.</p>
+        <p>Projects:</p>
+        <div>
+            <p class="button">Paperparrot</p>
+            <a target="_blank" href="https://github.com/leoklaus/paperparrot" class="button"><i
+                    class="github-black"></i>
+                GitHub</a>
+            <a target="_blank" href="https://apps.apple.com/de/app/paperparrot/id1663665267" class="button"><i
+                    class="fa fa-print"></i> AppStore</a>
+            <a target="_blank" href="https://paperparrot.me" class="button"><i class="paperparrot-icon"></i><p class="button-description"> Web</p>
+            </a>
+        </div>
+        <div>
+            <p class="button">OpenAirScan</p>
+            <a target="_blank" href="https://github.com/leoklaus/openairscan" class="button"><i class="fa fa-print"></i>
+                GitHub</a>
+            <a target="_blank" href="https://apps.apple.com/us/app/openairscan/id1663611384" class="button"><i
+                    class="fa fa-print"></i> AppStore</a>
+        </div>
+        <div>
+            <p class="button">SwiftESCL</p>
+            <a target="_blank" href="https://github.com/leoklaus/swiftescl" class="button"><i class="fa fa-print"></i>
+                GitHub</a>
+        </div>
+        <p>Socials:</p>
+        <div>
+            <a target="_blank" href="https://github.com/LeoKlaus" class="button"><i class="fab fa-github"></i>
+                GitHub</a>
+            <a target="_blank" href="https://discordapp.com/users/465930598058426380" class="button"><i
+                    class="fab fa-discord"></i> Discord</a>
+            <a target="_blank" href="https://github.com/LeoKlaus" class="button"><i class="fab fa-github"></i>
+                Message me</a>
+        </div>
 
 </body>
+
 </html>
