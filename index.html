@@ -10,11 +10,11 @@
 
     <style>
         body {
+            overflow: hidden;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: white;
             background: #ee70a4;
             aspect-ratio: 960/540;
-            width: 100%;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -29,7 +29,7 @@
             background-color: #fff;
             border-radius: 20px;
             max-width: 600px;
-            height: 400px;
+            min-height: 400px;
             padding: 25px;
             color: #444;
             box-shadow: 5px 5px 8px 1px rgba(37, 37, 37, 0.2);
@@ -54,18 +54,8 @@
             background: url('./images/GitHub_Logo_Black.png');
             background-repeat: no-repeat;
             display: inline-block;
-            width: 1.25em;
-            height: 1.25em;
-            position: absolute;
-            margin-left: -0.625em;
-        }
-
-        .paperparrot-icon {
-            background: url('./images/paperparrot.svg');
-            background-repeat: no-repeat;
-            display: inline-block;
-            width: 1.25em;
-            height: 1.25em;
+            width: 5em;
+            height: 5em;
             position: absolute;
             margin-left: -0.625em;
         }
@@ -107,8 +97,9 @@
                     class="github-black"></i>
                 GitHub</a>
             <a target="_blank" href="https://apps.apple.com/de/app/paperparrot/id1663665267" class="button"><i
-                    class="fa fa-print"></i> AppStore</a>
-            <a target="_blank" href="https://paperparrot.me" class="button"><i class="paperparrot-icon"></i><p class="button-description"> Web</p>
+                    class="appstore-black"></i> AppStore</a>
+            <a target="_blank" href="https://paperparrot.me" class="button"><i class="paperparrot-icon"></i>
+                <p class="button-description"> Web</p>
             </a>
         </div>
         <div>
@@ -129,10 +120,9 @@
                 GitHub</a>
             <a target="_blank" href="https://discordapp.com/users/465930598058426380" class="button"><i
                     class="fab fa-discord"></i> Discord</a>
-            <a target="_blank" href="https://github.com/LeoKlaus" class="button"><i class="fab fa-github"></i>
+            <a target="_blank" href="mailto:email@example.com" class="button"><i class="fab fa-github"></i>
                 Message me</a>
         </div>
-
 </body>
 
 </html>
