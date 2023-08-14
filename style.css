@@ -1,0 +1,173 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background: #ee70a4;
+    /*background: #C1D5E3;*/
+    aspect-ratio: 960/540;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./images/waves-bright.svg');
+}
+
+.projectName {
+    color: black;
+}
+
+table {
+    text-align: left;
+    width: 100%;
+}
+
+th {
+    font-size: larger;
+}
+
+.verttd{
+    display:block;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 20px;
+    width: 80%;
+    min-height: 25em !important;
+    padding: 25px;
+    color: #444;
+    box-shadow: 5px 5px 8px 1px rgba(37, 37, 37, 0.2);
+}
+
+.button {
+    align-items: center;
+    display: inline-block;
+    color: #444;
+    cursor: pointer;
+    margin: 4px 2px;
+}
+
+.profile {
+    float: right;
+    border-radius: 20px;
+    max-width: 100px;
+    margin-left: 20px;
+}
+
+.githublink {
+    height: 1.6em;
+    display: inline;
+    position: relative;
+    top: 0.5em;
+}
+
+.githublink:hover {
+    filter: invert(65%);
+}
+
+.appstorelink {
+    height: 2em;
+    display: inline;
+    position: relative;
+    top: 0.5em;
+    text-decoration: none;
+}
+
+.appstorelink:hover {
+    filter: invert(75%);
+}
+
+.sociallink {
+    border: none;
+    color: #444;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    padding-right: 2em;
+}
+
+.sociallink:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    width: 1.25em;
+    height: 1.25em;
+    display: inline;
+    position: relative;
+    top: 0.2em;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #d24c84;
+        /*background: #001220;*/
+        aspect-ratio: 960/540;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url('./images/waves-dark.svg');
+    }
+
+    .projectName {
+        color: #fff;
+    }
+
+    .card {
+        background-color: #444;
+        color: #fff;
+    }
+
+    .button {
+        color: #fff;
+    }
+
+    .sociallink {
+        color: #fff;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+
+    .profile {
+        max-width: 200px;
+    }
+
+    table {
+        width: 35em;
+    }
+
+    .verttd{
+        display:table-cell;
+        width: 10em;
+    }
+
+    .card {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border-radius: 20px;
+        max-width: 45em;
+        min-height: 25em;
+        padding: 25px;
+        color: #444;
+        box-shadow: 5px 5px 8px 1px rgba(37, 37, 37, 0.2);
+    }
+
+    .githublink {
+        height: 1.4em;
+    }
+
+    .appstorelink {
+        height: 1.75em;
+    }
+
+    .sociallink {
+        font-size: 16px;
+    }
+}
