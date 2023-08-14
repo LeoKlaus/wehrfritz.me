@@ -1,0 +1,10 @@
+colors:
+    dark:
+        dark:   #001220
+        blue:   #535d9b
+        pink:   #d24c84
+
+    bright:
+        top:    #C1D5E3
+        blue:   #8593ef
+        pink:   #ee70a4
