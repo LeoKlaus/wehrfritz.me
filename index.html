@@ -14,11 +14,29 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: white;
             background: #ee70a4;
+            /*background: #C1D5E3;*/
             aspect-ratio: 960/540;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             background-image: url('./images/waves-bright.svg');
+        }
+
+        .projectName {
+            color: black;
+        }
+
+        table {
+            text-align: left;
+            width: 35em;
+        }
+
+        th {
+            font-size: larger;
+        }
+
+        td {
+            width: 10em;
         }
 
         .card {
@@ -28,8 +46,8 @@
             transform: translate(-50%, -50%);
             background-color: #fff;
             border-radius: 20px;
-            max-width: 600px;
-            min-height: 400px;
+            max-width: 45em;
+            min-height: 25em;
             padding: 25px;
             color: #444;
             box-shadow: 5px 5px 8px 1px rgba(37, 37, 37, 0.2);
@@ -50,24 +68,63 @@
             margin-left: 20px;
         }
 
-        .github-black {
-            background: url('./images/GitHub_Logo_Black.png');
-            background-repeat: no-repeat;
-            display: inline-block;
-            width: 5em;
-            height: 5em;
-            position: absolute;
-            margin-left: -0.625em;
+        .githublink {
+            height: 1.4em;
+            display: inline;
+            position: relative;
+            top: 0.5em;
+        }
+
+        .githublink:hover {
+            filter: invert(65%);
+        }
+
+        .appstorelink {
+            height: 1.75em;
+            display: inline;
+            position: relative;
+            top: 0.5em;
+            text-decoration: none;
+        }
+
+        .appstorelink:hover {
+            filter: invert(75%);
+        }
+
+        .sociallink {
+            border: none;
+            color: #444;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            padding-right: 1em;
+        }
+
+        .sociallink:hover {
+            text-decoration: underline;
+        }
+
+        .icon {
+            width: 1.25em;
+            height: 1.25em;
+            display: inline;
+            position: relative;
+            top: 0.2em;
         }
 
         @media (prefers-color-scheme: dark) {
             body {
                 background: #d24c84;
+                /*background: #001220;*/
                 aspect-ratio: 960/540;
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
                 background-image: url('./images/waves-dark.svg');
+            }
+
+            .projectName {
+                color: #fff;
             }
 
             .card {
@@ -76,6 +133,10 @@
             }
 
             .button {
+                color: #fff;
+            }
+
+            .sociallink {
                 color: #fff;
             }
         }
@@ -87,42 +148,97 @@
     <div class="card">
         <img class="profile" src="images/me.jpg">
         <h1>Leo Wehrfritz</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, reprehenderit obcaecati? Architecto dolores
-            fuga veniam laudantium perferendis assumenda totam quia quod, autem mollitia. Iure sapiente voluptatibus id
-            laudantium corrupti magni.</p>
-        <p>Projects:</p>
-        <div>
-            <p class="button">Paperparrot</p>
-            <a target="_blank" href="https://github.com/leoklaus/paperparrot" class="button"><i
-                    class="github-black"></i>
-                GitHub</a>
-            <a target="_blank" href="https://apps.apple.com/de/app/paperparrot/id1663665267" class="button"><i
-                    class="appstore-black"></i> AppStore</a>
-            <a target="_blank" href="https://paperparrot.me" class="button"><i class="paperparrot-icon"></i>
-                <p class="button-description"> Web</p>
-            </a>
-        </div>
-        <div>
-            <p class="button">OpenAirScan</p>
-            <a target="_blank" href="https://github.com/leoklaus/openairscan" class="button"><i class="fa fa-print"></i>
-                GitHub</a>
-            <a target="_blank" href="https://apps.apple.com/us/app/openairscan/id1663611384" class="button"><i
-                    class="fa fa-print"></i> AppStore</a>
-        </div>
-        <div>
-            <p class="button">SwiftESCL</p>
-            <a target="_blank" href="https://github.com/leoklaus/swiftescl" class="button"><i class="fa fa-print"></i>
-                GitHub</a>
-        </div>
-        <p>Socials:</p>
-        <div>
-            <a target="_blank" href="https://github.com/LeoKlaus" class="button"><i class="fab fa-github"></i>
-                GitHub</a>
-            <a target="_blank" href="https://discordapp.com/users/465930598058426380" class="button"><i
-                    class="fab fa-discord"></i> Discord</a>
-            <a target="_blank" href="mailto:email@example.com" class="button"><i class="fab fa-github"></i>
-                Message me</a>
-        </div>
+        <p>Studying computer science at Hochschule Mainz. Developer and maintainer of Paperparrot. Currently mostly interested in Swift, hardware and IT management, self hosted applications.</p>
+        <table>
+            <tr>
+                <th>Projects:</th>
+            </tr>
+            <tr>
+                <td class="projectName">Paperparrot</td>
+                <td class="projectName">OpenAirScan</td>
+                <td class="projectName">SwiftESCL</td>
+            </tr>
+            <tr>
+                <td>
+                    <a target="_blank" href="https://github.com/leoklaus/paperparrot">
+                    <picture>
+                        <source srcset="./images/GitHub_Logo_White.png" media="(prefers-color-scheme: dark)">
+                        <img src="./images/GitHub_Logo_Black.png" class="githublink">
+                    </picture>
+                </a>
+                </td>
+                <td>
+                    <a target="_blank" href="https://github.com/leoklaus/openairscan">
+                        <picture>
+                            <source srcset="./images/GitHub_Logo_White.png" media="(prefers-color-scheme: dark)">
+                            <img src="./images/GitHub_Logo_Black.png" class="githublink">
+                        </picture>
+                    </a>
+                </td>
+                <td>
+                    <a target="_blank" href="https://github.com/leoklaus/swiftescl">
+                        <picture>
+                            <source srcset="./images/GitHub_Logo_White.png" media="(prefers-color-scheme: dark)">
+                            <img src="./images/GitHub_Logo_Black.png" class="githublink">
+                        </picture>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a target="_blank" href="https://apps.apple.com/de/app/paperparrot/id1663665267">
+                        <picture>
+                            <source srcset="./images/AppStore_Badge_White.svg" media="(prefers-color-scheme: dark)">
+                            <img src="./images/AppStore_Badge_Black.svg" class="appstorelink">
+                        </picture>
+                    </a>
+                </td>
+                <td>
+                    <a target="_blank" href="https://apps.apple.com/us/app/openairscan/id1663611384">
+                        <picture>
+                            <source srcset="./images/AppStore_Badge_White.svg" media="(prefers-color-scheme: dark)">
+                            <img src="./images/AppStore_Badge_Black.svg" class="appstorelink">
+                        </picture>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <table>
+            <tr>
+                <th>Socials:</th>
+            </tr>
+            <tr>
+                <td>
+                    <a target="_blank" href="https://github.com/LeoKlaus" class="sociallink">
+                        <picture>
+                            <source srcset="./images/github-mark-white.svg" media="(prefers-color-scheme: dark)">
+                            <img src="./images/github-mark-black.svg" class="icon">
+                        </picture>
+                        LeoKlaus
+                    </a>
+                </td>
+                <td>
+                    <a target="_blank" href="https://discordapp.com/users/465930598058426380" class="sociallink">
+                        <picture>
+                            <source srcset="./images/discord-mark-white.svg" media="(prefers-color-scheme: dark)">
+                            <img src="./images/discord-mark-black.svg" class="icon">
+                        </picture>
+                        leoklaus
+                    </a>
+                </td>
+                <td>
+                    <a target="_blank" href="mailto:contact@wehrfritz.me" class="sociallink">
+                        <picture>
+                            <source srcset="./images/Envelope_Icon_White.svg" media="(prefers-color-scheme: dark)">
+                            <img src="./images/Envelope_Icon_Black.svg" class="icon">
+                        </picture>
+                        Message me
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
